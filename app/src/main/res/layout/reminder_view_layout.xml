@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dr_ripple_ractengle"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:padding="@dimen/_1sdp">
+
+        <LinearLayout
+            android:id="@+id/firstLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_gravity="center"
+                android:layout_weight="0.6"
+                android:padding="3dp"
+                android:src="@drawable/dummyp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4.3"
+                android:orientation="vertical"
+                android:padding="@dimen/_6sdp">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/nameOUserTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="start|center_vertical"
+                        android:textAlignment="viewStart"
+                        android:fontFamily="@font/leaguespartan_medium"
+                        android:lines="1"
+                        android:visibility="gone"
+                        android:text="@string/name"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/phoneOUserTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="end|center_vertical"
+                        android:textAlignment="viewEnd"
+                        android:layoutDirection="ltr"
+                        android:fontFamily="@font/leaguespartan_medium"
+                        android:lines="1"
+                        android:text="@string/name"
+                        android:textSize="@dimen/_14sdp" />
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/msgOUserTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/leaguespartan_light"
+                    android:lines="1"
+                    android:gravity="start|center_vertical"
+                    android:textAlignment="viewStart"
+                    android:text="@string/hallo_hamza"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_1sdp">
+
+                <TextView
+                    android:id="@+id/dateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:fontFamily="@font/leaguespartan_light"
+                    android:textSize="@dimen/_9ssp" />
+
+                <ImageView
+                    android:id="@+id/delete_chat"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/delete_chat_icon" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

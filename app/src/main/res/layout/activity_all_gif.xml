@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".activities.AllGifA">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/dr_ripple_ractengle"
+                android:src="@drawable/ic_back_arrow" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/leaguespartan_semibold"
+                android:gravity="center"
+                android:text="@string/gif"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:animateLayoutChanges="true"
+            android:id="@+id/tabSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:animateLayoutChanges="true"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:elevation="@dimen/_2sdp"
+                android:layout_marginVertical="@dimen/_4sdp"
+                android:background="@drawable/et_bg_direct_screen">
+
+
+                <ImageView
+                    android:id="@+id/ivTempSearch"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/search_here_hint"
+                    android:alpha="0.6"
+                    android:src="@drawable/search_black"
+                    app:tint="@color/black"
+                    />
+
+
+                <EditText
+                    android:layout_toEndOf="@+id/ivTempSearch"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/ivCloseSearch"
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@font/leaguespartan_medium"
+                    android:hint="@string/search_hint"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:layout_marginHorizontal="@dimen/_6sdp"
+                    android:paddingHorizontal="@dimen/_6sdp"
+                    android:textColor="@color/black"
+                    android:gravity="start|center_vertical"
+                    android:textColorHint="@color/dark_gray"
+                    android:textSize="@dimen/_12ssp" />
+
+
+                <ImageView
+                    android:id="@+id/ivCloseSearch"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/search_here_hint"
+                    android:background="@drawable/dr_ripple_ractengle"
+                    android:src="@drawable/ic_close"
+                    android:alpha="0.6"
+                    app:tint="@color/dark_gray"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabSearchView"
+            android:layout_above="@+id/tabNative"
+            android:layout_centerHorizontal="true">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/tabNoData"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        app:srcCompat="@drawable/svg_nofile" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="@string/no_gif_found"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tabNative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_6sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:elevation="@dimen/_2sdp"
+            android:layout_centerHorizontal="true"
+            android:minHeight="@dimen/_40sdp"
+            android:background="@color/grey_50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ic_sweety_rasty"
+                android:textSize="@dimen/_15sdp"
+                android:includeFontPadding="false"
+                android:text="@string/ad_is_loading" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</layout>

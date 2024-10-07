@@ -1,0 +1,149 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+android {
+
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "dzm.wamr.recover.deleted.messages.photo.media"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 87
+        versionName "87"
+        setProperty("archivesBaseName", rootProject.name + "-" + versionName)
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            resValue 'string', 'admob_app_id', '"ca-app-pub-6081967606533178~1398025113"'
+            resValue 'string', 'admob_open_ads_id', '"ca-app-pub-6081967606533178/1116869802"'
+            resValue 'string', 'admob_banner_id', '"ca-app-pub-6081967606533178/7252987029"'
+            resValue 'string', 'admob_interstitial_id', '"ca-app-pub-6081967606533178/7873849840"'
+            resValue 'string', 'admob_reward_video_id', '"ca-app-pub-6081967606533178/4043328118"'
+            resValue 'string', 'native_ads', '"ca-app-pub-6081967606533178/4352789617"'
+            resValue 'string', 'weeklypro_id', '"weeklypro_id"'
+            resValue 'string', 'weekly_id', '"weekly_id"'
+            resValue 'string', 'monthly_id', '"monthly_id"'
+            resValue 'string', 'yearly_id', '"yearly_id"'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            resValue 'string', 'admob_app_id', '"ca-app-pub-3940256099942544~3347511713"'
+            resValue 'string', 'admob_open_ads_id', '"/6499/example/app-open"'
+            resValue 'string', 'admob_banner_id', '"/6499/example/banner"'
+            resValue 'string', 'admob_interstitial_id', '"/6499/example/interstitial"'
+            resValue 'string', 'admob_reward_video_id', '"/6499/example/rewarded"'
+            resValue 'string', 'native_ads', '"/6499/example/native"'
+            resValue 'string', 'weeklypro_id', '"weeklypro_id"'
+            resValue 'string', 'weekly_id', '"weekly_id"'
+            resValue 'string', 'monthly_id', '"monthly_id"'
+            resValue 'string', 'yearly_id', '"yearly_id"'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4G"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+}
+configurations.all {
+    resolutionStrategy {
+        force("com.facebook.soloader:soloader:0.10.4")
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.5'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-process:2.6.0'
+    implementation 'com.google.android.gms:play-services-measurement-api:21.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    // circularImageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    // sdp library
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    // Import the BoM for the Firebase platform/
+    implementation platform('com.google.firebase:firebase-bom:31.0.2')
+    // firebase message service
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-config'
+    // admob dependency
+    implementation 'com.google.android.gms:play-services-ads:22.3.0'
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
+    // glide dependency
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation("androidx.documentfile:documentfile:1.0.1")
+    //for copy
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0"
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    implementation 'com.github.captain-miao:optroundcardview:1.0.0'
+    implementation 'com.guolindev.permissionx:permissionx:1.7.1'
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.0"
+    //lottie
+    implementation "com.airbnb.android:lottie:6.0.0"
+    implementation 'com.google.android.play:core:1.10.3'
+    implementation("androidx.work:work-runtime:2.8.1")
+    implementation 'com.hbb20:ccp:2.6.1'
+    implementation project(':iap')
+    //adding native templates
+    implementation project(':nativetemplates')
+    //shared preferences
+    implementation 'com.pixplicity.easyprefs:EasyPrefs:1.10.0'
+    //screenshot
+    implementation 'com.github.MindorksOpenSource:screenshot:v0.0.1'
+    //loader library
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.smartnsoft:backgrounddetector:1.3.2'
+    //giphy integrate
+    implementation('com.giphy.sdk:core:1.0.2@aar') {
+        transitive = true
+    }
+    //image loading
+    implementation('com.facebook.fresco:fresco:2.6.0') {
+        exclude group: 'com.facebook.soloader', module: 'soloader'
+        exclude group: 'com.facebook.fresco', module: 'soloader'
+    }
+    implementation('com.facebook.fresco:animated-gif:2.6.0') {
+        exclude group: 'com.facebook.soloader', module: 'soloader'
+        exclude group: 'com.facebook.fresco', module: 'soloader'
+    }
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+}

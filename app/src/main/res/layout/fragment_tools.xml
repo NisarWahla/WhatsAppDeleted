@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <RelativeLayout
+       android:background="@color/white"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <androidx.core.widget.NestedScrollView
+           android:fillViewport="true"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:layout_above="@+id/tabNative"
+           android:clipToPadding="false"
+           android:paddingVertical="@dimen/_8sdp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:id="@+id/tabTopContainer"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <LinearLayout
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_marginHorizontal="@dimen/_8sdp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+
+                   <RelativeLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/_100sdp"
+                           android:background="@drawable/rounded_bg"
+                           android:gravity="center"
+                           android:elevation="@dimen/_2sdp"
+                           android:layout_margin="@dimen/_4sdp"
+                           android:layout_centerHorizontal="true"
+                           android:layout_centerVertical="true"
+                           android:orientation="vertical">
+
+                           <LinearLayout
+                               android:id="@+id/tabDirectMsg"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:background="@drawable/dr_ripple_less_ractengle_round"
+                               android:gravity="center"
+                               android:orientation="vertical">
+
+                               <ImageView
+                                   android:layout_width="@dimen/_42sdp"
+                                   android:layout_height="@dimen/_42sdp"
+                                   android:layout_gravity="center"
+                                   android:adjustViewBounds="true"
+                                   android:contentDescription="@string/app_name"
+                                   android:src="@drawable/direct_msg" />
+
+                               <TextView
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+                                   android:fontFamily="sans-serif-black"
+                                   android:gravity="center"
+                                   android:includeFontPadding="false"
+                                   android:layout_marginTop="@dimen/_6sdp"
+                                   android:text="@string/direct_chat"
+                                   android:textColor="@color/white"
+                                   android:textSize="@dimen/_13ssp" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/_100sdp"
+                           android:background="@drawable/rounded_bg"
+                           android:gravity="center"
+                           android:elevation="@dimen/_2sdp"
+                           android:layout_margin="@dimen/_4sdp"
+                           android:layout_centerHorizontal="true"
+                           android:layout_centerVertical="true"
+                           android:orientation="vertical">
+
+                           <LinearLayout
+                               android:id="@+id/tabRepeatText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:background="@drawable/dr_ripple_less_ractengle_round"
+                               android:gravity="center"
+                               android:orientation="vertical">
+
+                               <ImageView
+                                   android:layout_width="@dimen/_42sdp"
+                                   android:layout_height="@dimen/_42sdp"
+                                   android:layout_gravity="center"
+                                   android:adjustViewBounds="true"
+                                   android:contentDescription="@string/app_name"
+                                   android:src="@drawable/ic_repeat" />
+
+                               <TextView
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+                                   android:fontFamily="sans-serif-black"
+                                   android:gravity="center"
+                                   android:includeFontPadding="false"
+                                   android:layout_marginTop="@dimen/_6sdp"
+                                   android:text="@string/text_repeater"
+                                   android:textColor="@color/white"
+                                   android:textSize="@dimen/_13ssp" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                   </RelativeLayout>
+
+
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_marginTop="@dimen/_4sdp"
+                   android:layout_marginHorizontal="@dimen/_8sdp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+
+                   <RelativeLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/_100sdp"
+                           android:background="@drawable/rounded_bg"
+                           android:gravity="center"
+                           android:elevation="@dimen/_2sdp"
+                           android:layout_margin="@dimen/_4sdp"
+                           android:layout_centerHorizontal="true"
+                           android:layout_centerVertical="true"
+                           android:orientation="vertical">
+
+                           <LinearLayout
+                               android:id="@+id/tabAsciiFaces"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:background="@drawable/dr_ripple_less_ractengle_round"
+                               android:gravity="center"
+                               android:orientation="vertical">
+
+                               <ImageView
+                                   android:layout_width="@dimen/_42sdp"
+                                   android:layout_height="@dimen/_42sdp"
+                                   android:layout_gravity="center"
+                                   android:adjustViewBounds="true"
+                                   android:contentDescription="@string/app_name"
+                                   android:src="@drawable/ic_ascii_faces" />
+
+                               <TextView
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+                                   android:fontFamily="sans-serif-black"
+                                   android:gravity="center"
+                                   android:includeFontPadding="false"
+                                   android:layout_marginTop="@dimen/_6sdp"
+                                   android:text="@string/ascii_faces"
+                                   android:textColor="@color/white"
+                                   android:textSize="@dimen/_13ssp" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/_100sdp"
+                           android:background="@drawable/rounded_bg"
+                           android:gravity="center"
+                           android:elevation="@dimen/_2sdp"
+                           android:layout_margin="@dimen/_4sdp"
+                           android:layout_centerHorizontal="true"
+                           android:layout_centerVertical="true"
+                           android:orientation="vertical">
+
+                           <LinearLayout
+                               android:id="@+id/tabEmoji"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:background="@drawable/dr_ripple_less_ractengle_round"
+                               android:gravity="center"
+                               android:orientation="vertical">
+
+                               <ImageView
+                                   android:layout_width="@dimen/_42sdp"
+                                   android:layout_height="@dimen/_42sdp"
+                                   android:layout_gravity="center"
+                                   android:adjustViewBounds="true"
+                                   android:contentDescription="@string/app_name"
+                                   android:src="@drawable/ic_emoji" />
+
+                               <TextView
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+                                   android:fontFamily="sans-serif-black"
+                                   android:gravity="center"
+                                   android:includeFontPadding="false"
+                                   android:layout_marginTop="@dimen/_6sdp"
+                                   android:text="@string/emoji"
+                                   android:textColor="@color/white"
+                                   android:textSize="@dimen/_13ssp" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                   </RelativeLayout>
+
+
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_marginTop="@dimen/_4sdp"
+                   android:layout_marginHorizontal="@dimen/_8sdp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="2">
+
+
+                   <RelativeLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/_100sdp"
+                           android:background="@drawable/rounded_bg"
+                           android:gravity="center"
+                           android:elevation="@dimen/_2sdp"
+                           android:layout_margin="@dimen/_4sdp"
+                           android:layout_centerHorizontal="true"
+                           android:layout_centerVertical="true"
+                           android:orientation="vertical">
+
+                           <LinearLayout
+                               android:id="@+id/tabGif"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:background="@drawable/dr_ripple_less_ractengle_round"
+                               android:gravity="center"
+                               android:orientation="vertical">
+
+                               <ImageView
+                                   android:layout_width="@dimen/_42sdp"
+                                   android:layout_height="@dimen/_42sdp"
+                                   android:layout_gravity="center"
+                                   android:adjustViewBounds="true"
+                                   android:contentDescription="@string/app_name"
+                                   android:src="@drawable/ic_main_gif" />
+
+                               <TextView
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+                                   android:fontFamily="sans-serif-black"
+                                   android:gravity="center"
+                                   android:includeFontPadding="false"
+                                   android:layout_marginTop="@dimen/_6sdp"
+                                   android:text="@string/gif"
+                                   android:textColor="@color/white"
+                                   android:textSize="@dimen/_13ssp" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/_100sdp"
+                           android:background="@drawable/rounded_bg"
+                           android:gravity="center"
+                           android:elevation="@dimen/_2sdp"
+                           android:layout_margin="@dimen/_4sdp"
+                           android:layout_centerHorizontal="true"
+                           android:layout_centerVertical="true"
+                           android:orientation="vertical">
+
+                           <LinearLayout
+                               android:id="@+id/tabWhatsWeb"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:background="@drawable/dr_ripple_less_ractengle_round"
+                               android:gravity="center"
+                               android:orientation="vertical">
+
+                               <ImageView
+                                   android:layout_width="@dimen/_42sdp"
+                                   android:layout_height="@dimen/_42sdp"
+                                   android:layout_gravity="center"
+                                   android:adjustViewBounds="true"
+                                   android:contentDescription="@string/app_name"
+                                   android:src="@drawable/ic_whats_web" />
+
+                               <TextView
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+                                   android:fontFamily="sans-serif-black"
+                                   android:gravity="center"
+                                   android:includeFontPadding="false"
+                                   android:layout_marginTop="@dimen/_6sdp"
+                                   android:text="@string/whats_web"
+                                   android:textColor="@color/white"
+                                   android:textSize="@dimen/_13ssp" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                   </RelativeLayout>
+
+
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+
+
+       </androidx.core.widget.NestedScrollView>
+
+       <FrameLayout
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/tabNative"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginVertical="@dimen/_6sdp"
+           android:paddingVertical="@dimen/_2sdp"
+           android:gravity="center"
+           android:visibility="gone"
+           android:elevation="@dimen/_2sdp"
+           android:minHeight="@dimen/_130sdp"
+           android:background="@color/grey_50">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:textColor="@color/black"
+               android:fontFamily="@font/ic_sweety_rasty"
+               android:textSize="@dimen/_15sdp"
+               android:includeFontPadding="false"
+               android:text="@string/ad_is_loading" />
+
+
+           <com.google.android.ads.nativetemplates.TemplateView
+               android:id="@+id/nativeTemplate"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginStart="@dimen/_10sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:background="@drawable/native_ad_border"
+               android:visibility="gone"
+               app:gnt_template_type="@layout/gnt_custom_a_template_view" />
+
+       </FrameLayout>
+
+   </RelativeLayout>
+</layout>

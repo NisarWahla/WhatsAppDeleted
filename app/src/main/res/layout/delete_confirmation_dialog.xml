@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/delete_confirm_round">
+
+    <ImageView
+        android:id="@+id/trash_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/_20sdp"
+        android:src="@drawable/trash_folder" />
+
+    <TextView
+        android:id="@+id/txt_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trash_folder"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/leaguespartan_semibold"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/sure_you_want_to_delete"
+        android:textAllCaps="false"
+        android:textColor="@color/black_delete"
+        android:textSize="@dimen/_17ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_delete"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/leaguespartan_medium"
+        android:text="@string/app_name"
+        android:textColor="#a2a2a2"
+        android:textSize="@dimen/_14ssp" />
+
+    <LinearLayout
+        android:id="@+id/relative_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/file_name"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txt_no"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/yes_color_round"
+            android:fontFamily="@font/leaguespartan_regular"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="#858585"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txt_yes"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:background="@drawable/no_color_round"
+            android:fontFamily="@font/leaguespartan_regular"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_70sdp"
+    android:layout_height="@dimen/_100sdp"
+    android:layout_marginStart="@dimen/_7sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="UseCompoundDrawables">
+
+    <TextView
+        android:id="@+id/img_chat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/leaguespartan_light"
+        android:text="@string/any_name"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/img_chat_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/img_chat_name"
+        android:fontFamily="@font/leaguespartan_light"
+        android:text="@string/date"
+        android:textSize="14sp" />
+    <ImageView
+        android:id="@+id/chat_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img_chat_date"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/support"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>

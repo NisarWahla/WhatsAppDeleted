@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_bg_two">
+
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/black"
+                android:layout_gravity="center_horizontal" />
+
+            <RelativeLayout
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/ractengle_round_solid_gray"
+                android:id="@+id/toprel"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                >
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tv_set_home_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp"
+                    android:gravity="center"
+                    android:background="@drawable/dr_ripple_ractengle_two_round"
+                    android:text="@string/set_home"
+                    android:includeFontPadding="false"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/ractengle_round_solid_gray"
+                android:id="@+id/midelRel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tv_set_lock_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:background="@drawable/dr_ripple_ractengle_two_round"
+                    android:text="@string/set_lock"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@drawable/ractengle_round_solid_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/midelRel"
+                app:layout_constraintStart_toStartOf="@+id/midelRel"
+                app:layout_constraintTop_toBottomOf="@+id/midelRel">
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tv_set_both"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:background="@drawable/dr_ripple_ractengle_two_round"
+                    android:text="@string/set_both"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

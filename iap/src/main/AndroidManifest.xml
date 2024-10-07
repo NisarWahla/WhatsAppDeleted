@@ -1,0 +1,3 @@
+<manifest package="com.aemerse.iap" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="com.android.vending.BILLING" />
+</manifest>

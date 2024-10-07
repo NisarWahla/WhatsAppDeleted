@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fitsSystemWindows="false"
+            android:layout_gravity="center_horizontal"
+            android:windowFullscreen="true"
+            android:paddingBottom="@dimen/_22sdp"
+            tools:context=".activities.PremiumNewA">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:src="@drawable/ic_premium_banner"
+                    android:scaleType="fitXY"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/toolbar"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    android:layout_height="@dimen/_40sdp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/leaguespartan_medium"
+                        android:gravity="center"
+                        android:text="@string/upgrade_plan"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:tint="@color/white"
+                        android:background="@drawable/dr_ripple_ractengle"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_close" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_centerHorizontal="true">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_18sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:fontFamily="@font/leaguespartan_medium"
+                        android:gravity="start|center_vertical"
+                        android:textAlignment="viewStart"
+                        android:lineSpacingExtra="@dimen/_6sdp"
+                        android:text="@string/upgrade_your_plan_to_enjoy_exclusive_features_tailored_to_your_needs"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_180sdp"
+                    android:background="@drawable/top_round_ractengle_solid_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/adzDetailSection"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="4"
+                            android:background="@drawable/bottom_line_solid_white_gray"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:gravity="center"
+                                android:background="@drawable/dr_ripple_ractengle"
+                                android:layout_height="@dimen/_40sdp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="@dimen/_12sdp"
+                                        android:layout_height="@dimen/_12sdp"
+                                        android:src="@drawable/ic_star_green"/>
+
+                                    <TextView
+                                        android:layout_marginStart="@dimen/_4sdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/leaguespartan_medium"
+                                        android:gravity="center"
+                                        android:text="@string/features"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_13sdp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_weight="0.8"
+                                android:layout_width="0dp"
+                                android:gravity="center"
+                                android:background="@drawable/horizental_bottom_side_line_stroke_gray"
+                                android:layout_height="@dimen/_40sdp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/leaguespartan_medium"
+                                    android:gravity="center"
+                                    android:text="@string/free"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_weight="1.2"
+                                android:layout_width="0dp"
+                                android:gravity="center"
+                                android:layout_height="@dimen/_40sdp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/leaguespartan_medium"
+                                    android:gravity="center"
+                                    android:text="@string/premium"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="4"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:paddingHorizontal="@dimen/_12sdp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center_horizontal">
+
+
+                                    <TextView
+                                        android:layout_marginTop="@dimen/_12sdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/leaguespartan_semibold"
+                                        android:gravity="start|center"
+                                        android:textAlignment="viewStart"
+                                        android:text="@string/unlimited_message_recovery"
+                                        android:textColor="@color/black"
+                                        android:minLines="3"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold"/>
+
+                                    <TextView
+                                        android:layout_marginVertical="@dimen/_6sdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/leaguespartan_semibold"
+                                        android:gravity="start|center"
+                                        android:textAlignment="viewStart"
+                                        android:minLines="3"
+                                        android:text="@string/no_full_page_ads"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_weight="0.8"
+                                android:layout_width="0dp"
+                                android:background="@drawable/horizental_side_line_stroke_gray"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center_horizontal">
+
+
+                                    <ImageView
+                                        android:layout_marginTop="@dimen/_20sdp"
+                                        android:layout_width="@dimen/_12sdp"
+                                        android:layout_height="@dimen/_12sdp"
+                                        android:src="@drawable/ic_cross_red"/>
+
+                                    <ImageView
+                                        android:layout_marginTop="@dimen/_30sdp"
+                                        android:layout_width="@dimen/_12sdp"
+                                        android:layout_height="@dimen/_12sdp"
+                                        android:src="@drawable/ic_cross_red"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_weight="1.2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center_horizontal">
+
+
+                                    <ImageView
+                                        android:layout_marginTop="@dimen/_18sdp"
+                                        android:layout_width="@dimen/_16sdp"
+                                        android:layout_height="@dimen/_16sdp"
+                                        android:src="@drawable/ic_check_green"/>
+
+                                    <ImageView
+                                        android:layout_marginTop="@dimen/_24sdp"
+                                        android:layout_width="@dimen/_16sdp"
+                                        android:layout_height="@dimen/_16sdp"
+                                        android:src="@drawable/ic_check_green"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/packageDetailSection"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_below="@+id/adzDetailSection"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:id="@+id/tabMainYear"
+                                android:background="@drawable/dr_ripple_ractengle_round"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+
+
+                                <RelativeLayout
+                                    android:id="@+id/tabYear"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/ractengle_round_solid_white_green"
+                                    android:paddingHorizontal="@dimen/_12sdp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <ImageView
+                                        android:id="@+id/ivYear"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:src="@drawable/ic_select"/>
+
+
+                                    <TextView
+                                        android:id="@+id/tvYear"
+                                        android:layout_toEndOf="@+id/ivYear"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toStartOf="@+id/tvPriceYear"
+                                        android:layout_marginStart="@dimen/_12sdp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/leaguespartan_medium"
+                                        android:gravity="start|center_vertical"
+                                        android:textAlignment="viewStart"
+                                        android:text="@string/yearly_title"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_15sdp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvPriceYear"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginStart="@dimen/_12sdp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/leaguespartan_medium"
+                                        android:gravity="center"
+                                        android:text="@string/yearly_price"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_15sdp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/tabPopular"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ractengle_round_solid_black">
+
+                                <TextView
+                                    android:layout_marginHorizontal="@dimen/_12sdp"
+                                    android:layout_marginVertical="@dimen/_2sdp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/leaguespartan_medium"
+                                    android:gravity="center"
+                                    android:text="@string/popular"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10sdp"
+
+                                    />
+
+                            </RelativeLayout>
+
+                        </FrameLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:id="@+id/tabMainMonth"
+                            android:background="@drawable/dr_ripple_ractengle_round"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/tabMonth"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/ractengle_round_solid_transparent"
+                                android:paddingHorizontal="@dimen/_12sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp">
+
+                                <ImageView
+                                    android:id="@+id/ivMonth"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/ic_unselect"/>
+
+
+                                <TextView
+                                    android:id="@+id/tvMonth"
+                                    android:layout_toEndOf="@+id/ivMonth"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toStartOf="@+id/tvPriceMonth"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/leaguespartan_medium"
+                                    android:gravity="start|center_vertical"
+                                    android:textAlignment="viewStart"
+                                    android:text="@string/monthly_title"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvPriceMonth"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/leaguespartan_medium"
+                                    android:gravity="center"
+                                    android:text="@string/monthly_price"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:id="@+id/tabMainWeek"
+                            android:background="@drawable/dr_ripple_ractengle_round"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/tabWeek"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/ractengle_round_solid_transparent"
+                                android:paddingHorizontal="@dimen/_12sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp">
+
+                                <ImageView
+                                    android:id="@+id/ivWeek"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/ic_unselect"/>
+
+
+                                <TextView
+                                    android:id="@+id/tvWeek"
+                                    android:layout_toEndOf="@+id/ivWeek"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toStartOf="@+id/tvPriceWeek"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/leaguespartan_medium"
+                                    android:gravity="start|center_vertical"
+                                    android:textAlignment="viewStart"
+                                    android:text="@string/weekly_title"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvPriceWeek"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/leaguespartan_medium"
+                                    android:gravity="center"
+                                    android:text="@string/weekly_price"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_below="@+id/packageDetailSection"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:id="@+id/tabMainSubscribe"
+                            android:background="@drawable/dr_ripple_ractengle_round"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/tabSubscribe"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/ractengle_round_solid_green"
+                                android:paddingHorizontal="@dimen/_12sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_42sdp">
+
+
+
+                                <TextView
+                                    android:id="@+id/tvSubscribe"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/leaguespartan_medium"
+                                    android:gravity="start|center_vertical"
+                                    android:textAlignment="viewStart"
+                                    android:text="@string/subscribe"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/leaguespartan_regular"
+                            android:gravity="center"
+                            android:text="@string/your_subscription_can_be_managed_or_canceled_under_your_google_play_store_account_profile_payments_amp_subscriptions_subscriptions"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <TextView
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/leaguespartan_regular"
+                            android:gravity="center"
+                            android:text="@string/your_subscription_will_be_auto_renews_you_can_cancel_anytime"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+</layout>

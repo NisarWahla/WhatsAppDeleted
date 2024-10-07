@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        tools:context=".activities.MediaPreviewActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back"
+                android:background="@drawable/dr_ripple_ractengle"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/back_icon" />
+
+            <ImageView
+                android:id="@+id/delete_layout"
+                android:background="@drawable/dr_ripple_ractengle"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/delete_chat_icon" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/tabNative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_6sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:elevation="@dimen/_2sdp"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:minHeight="@dimen/_40sdp"
+            android:background="@color/grey_50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ic_sweety_rasty"
+                android:textSize="@dimen/_15sdp"
+                android:includeFontPadding="false"
+                android:text="@string/ad_is_loading" />
+
+        </FrameLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tabNative"
+            android:layout_above="@+id/bottomTab"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/bottomTab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/shareImg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/dr_ripple_ractengle"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_share" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setWall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/dr_ripple_ractengle"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_wlapaper" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/downloadIcon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/dr_ripple_ractengle"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_download" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/slide_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:src="@drawable/handburger"/>
+
+    <TextView
+        android:id="@+id/toolbarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/leaguespartan_medium"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:id="@+id/searchEt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:drawablePadding="12dp"-->
+<!--        android:visibility="gone"-->
+<!--        app:closeIcon="@drawable/cross"-->
+<!--        app:searchHintIcon="@drawable/search"-->
+<!--        app:searchIcon="@drawable/search"-->
+<!--        android:hint="@string/search_here_hint"-->
+<!--        app:defaultQueryHint="@string/search_here_hint"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:iconifiedByDefault="false"-->
+<!--        android:padding="10dp"-->
+<!--        android:searchHintIcon="@drawable/search"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white" />-->
+
+    <ImageView
+        android:id="@+id/rightClickIv"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/search" />
+</RelativeLayout>

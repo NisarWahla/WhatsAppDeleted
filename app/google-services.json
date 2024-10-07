@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "309285868135",
+    "firebase_url": "https://whatsapp-recovery-b5e5b-default-rtdb.firebaseio.com",
+    "project_id": "whatsapp-recovery-b5e5b",
+    "storage_bucket": "whatsapp-recovery-b5e5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309285868135:android:fd1e49dd71ac8c6a03bac2",
+        "android_client_info": {
+          "package_name": "dzm.wamr.recover.deleted.messages.photo.media"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309285868135-vopcn952q37sb6tu7bg8pmt0m7a1ombg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dzm.wamr.recover.deleted.messages.photo.media",
+            "certificate_hash": "c0c3e3eda34ac61e18df904f2f12aaf6b551ab1b"
+          }
+        },
+        {
+          "client_id": "309285868135-cq68406tjq7cp5rea6bm71n4s6rc104m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6uIAvzC8zF6Zl6KrX24IdVsU3PDD-nWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309285868135-cq68406tjq7cp5rea6bm71n4s6rc104m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

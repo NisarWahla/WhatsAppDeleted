@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00A884</color>
+    <color name="colorPrimaryDark">#014A3B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="proColor">#01A684</color>
+    <color name="proColorLight">#1A01A684</color>
+    <color name="yellowColor">#FFB904</color>
+    <color name="green">#2ECD6E</color>
+    <color name="lightGreen">#1F2ECD6E</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="rippleColor">#EAEAEA</color>
+    <color name="rippleColorDark">#909090</color>
+    <color name="drawer_txt_color">#5D5D5D</color>
+    <color name="un_selected_color">#D2F2DE</color>
+    <color name="grey">#F5F5F5</color>
+    <color name="card_gray">#F4F4F4</color>
+    <color name="soft_gray">#F3F3F3</color>
+    <color name="strokeColorGray">#EAEAEA</color>
+    <color name="red">#ffcc0000</color>
+    <color name="soft_brown">#D3C0B2</color>
+    <color name="grey_50">#FAFAFA</color>
+    <color name="brown">#A99282</color>
+    <color name="tab_color_fr">#F3F3F3</color>
+    <color name="dark_gray">#857B74</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="half_transparent">#80000000</color>
+    <color name="black_delete">#141414</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="darkgray">#93959A</color>
+    <color name="gray">#f0f0f0</color>
+    <color name="lightPrimary">#F2FFFE</color>
+</resources>
